@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "216243990832",
+    "firebase_url": "https://quiz-kita-9c652.firebaseio.com",
+    "project_id": "quiz-kita-9c652",
+    "storage_bucket": "quiz-kita-9c652.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216243990832:android:fbb8bbbfbb07f8d7ac98f5",
+        "android_client_info": {
+          "package_name": "com.ilkom.quizkita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216243990832-ih91vo1isokggh6gamdkgdg8drrg8f5k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ilkom.quizkita",
+            "certificate_hash": "d796247fb244d64494087eb3ed6975581231ef2e"
+          }
+        },
+        {
+          "client_id": "216243990832-hm558dij4s49ghakkqvbe9aqs99gdida.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSPUM2BFQiSRO44PM0pwuc_fWxIn9JIfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216243990832-hm558dij4s49ghakkqvbe9aqs99gdida.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

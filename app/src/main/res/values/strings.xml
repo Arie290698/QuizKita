@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Quiz Kita</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Daftar</string>
+    <string name="input_error_name">Nama harus diisi</string>
+    <string name="input_error_email">Email harus diisi</string>
+    <string name="input_error_password">Password harus diisi</string>
+    <string name="input_error_password_length">Password harus memiliki minimal 6 huruf</string>
+    <string name="registration_success">Pendaftaran Akun berhasil</string>
+    <string name="input_error_email_invalid">Masukkan email yang valid</string>
+    <string name="auth_failed">Proses autentikasi gagal</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_rank">Ranking</string>
+    <string name="title_studi">Mulai Quiz</string>
+    <string name="title_profile">Profil</string>
+</resources>
