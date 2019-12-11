@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_rank"
+        android:id="@+id/navigation_rank"
         android:icon="@drawable/rank"
         android:title="@string/title_rank" />
 
     <item
-        android:id="@+id/nav_studi"
+        android:id="@+id/navigation_studi"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_studi" />
 
     <item
-        android:id="@+id/nav_profile"
+        android:id="@+id/navigation_profile"
         android:icon="@drawable/user"
         android:title="@string/title_profile" />
 

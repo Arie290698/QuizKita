@@ -1,91 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9b59b6"
+    android:background="#e8e8e8"
     android:orientation="vertical"
-    tools:context=".Quiz">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jai.quiz4.Question"
+    tools:showIn="@layout/activity_question">
 
-
-    <LinearLayout
-        android:id="@+id/layoutSoal"
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="#00BCD4"
-        android:padding="10dp">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/soal"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:padding="15dp"
-            android:textSize="20sp" />
-    </LinearLayout>
+            android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/grupJawaban"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp">
 
-        <RadioGroup
-            android:id="@+id/Jawaban"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                android:id="@+id/A"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/pagination"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:checked="false"
-                android:textSize="18sp" />
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#999"
+                android:textSize="16dp" />
 
-            <RadioButton
-                android:id="@+id/B"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvSoal"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:textSize="18sp" />
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="Total number of awards win by Satyajit ray in National award film ?"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#333"
+                android:textSize="20sp" />
 
-            <RadioButton
-                android:id="@+id/C"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|end"
+                android:layout_marginTop="30dp"
+                android:gravity="end|bottom"
+                android:orientation="vertical">
 
-            <RadioButton
-                android:id="@+id/D"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:textSize="18sp" />
-        </RadioGroup>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
 
-    </LinearLayout>
+                    <Button
+                        android:id="@+id/btC"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_blue_bright"
+                        android:orientation="vertical"
+                        android:text="Button"
+                        android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/next"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_gravity="bottom"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="25dp"
-        android:textColor="#fff"
-        android:background="#00BCD4"
-        android:text="Selanjutnya" />
+                    <Button
+                        android:id="@+id/btD"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_blue_bright"
+                        android:orientation="vertical"
+                        android:text="Button"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btA"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_blue_bright"
+                        android:orientation="vertical"
+                        android:text="Button"
+                        android:textSize="20sp" />
+
+
+                    <Button
+                        android:id="@+id/btB"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_blue_bright"
+                        android:orientation="vertical"
+                        android:text="Button"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

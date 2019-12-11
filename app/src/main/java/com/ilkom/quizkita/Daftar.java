@@ -1,8 +1,5 @@
 package com.ilkom.quizkita;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -11,11 +8,15 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
+import com.ilkom.quizkita.Model.UserModel;
 
 public class Daftar extends AppCompatActivity implements View.OnClickListener {
     private EditText eEmail, eFname, ePwd;
@@ -92,7 +93,7 @@ public class Daftar extends AppCompatActivity implements View.OnClickListener {
 
                         if (task.isSuccessful()) {
 
-                            User user = new User(
+                            UserModel user = new UserModel(
                                     name,
                                     email
                             );
@@ -106,7 +107,7 @@ public class Daftar extends AppCompatActivity implements View.OnClickListener {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(Daftar.this, getString(R.string.registration_success), Toast.LENGTH_LONG).show();
                                     } else {
-                                        //display a failure message
+                                        Toast.makeText(Daftar.this, getString(R.string.registration_failed), Toast.LENGTH_LONG).show();
                                     }
                                 }
                             });
@@ -131,5 +132,11 @@ public class Daftar extends AppCompatActivity implements View.OnClickListener {
     public void intentMasuk(View v) {
         Intent intent = new Intent(this, Masuk.class);
         startActivity(intent);
+    }
+
+    public void onBackPressed(){
+        Intent intent = new Intent(this, Masuk.class);
+        startActivity(intent);
+        finish();
     }
 }

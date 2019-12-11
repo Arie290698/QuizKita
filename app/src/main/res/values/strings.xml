@@ -9,10 +9,14 @@
     <string name="input_error_password">Password harus diisi</string>
     <string name="input_error_password_length">Password harus memiliki minimal 6 huruf</string>
     <string name="registration_success">Pendaftaran Akun berhasil</string>
+    <string name="registration_failed">Pendaftaran Akun gagal</string>
     <string name="input_error_email_invalid">Masukkan email yang valid</string>
     <string name="auth_failed">Proses autentikasi gagal</string>
     <string name="title_activity_dashboard">Dashboard</string>
     <string name="title_rank">Ranking</string>
     <string name="title_studi">Mulai Quiz</string>
     <string name="title_profile">Profil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

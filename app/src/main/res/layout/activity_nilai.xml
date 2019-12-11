@@ -17,12 +17,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/fname_nilai"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/carter_one"
             android:gravity="center"
-            android:text="Ester Caroline"
+            android:text="%Nama_Pengguna%"
             android:textColor="#FFEBCD"
             android:textSize="40dp"
             android:textStyle="bold" />
